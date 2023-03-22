@@ -9,8 +9,14 @@
     {
       "text": "sddsds",
       "day": "sdsds",
-      "reminder": false,
+      "reminder": true,
       "id": 2
+    },
+    {
+      "text": "Coes",
+      "day": "Now",
+      "reminder": true,
+      "id": 3
     }
   ]
 }
