@@ -31,6 +31,9 @@ app.use(cors());
 //     })
 //   );
 
+//Setup Routes For Which The Server Is Listening
+app.use("/", mainRoutes);
+
   //Server Running
 app.listen(process.env.PORT, () => {
     console.log("Server is running, you better catch it!");
