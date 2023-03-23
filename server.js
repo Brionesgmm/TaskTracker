@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 // const session = require("express-session");
 // const MongoStore = require("connect-mongo")(session);
 const cors = require('cors');
+const tasksRoutes = require("./routes/tasks");
 const connectDB = require("./config/database");
 
 //Use .env file in config folder
@@ -32,7 +33,8 @@ app.use(cors());
 //   );
 
 //Setup Routes For Which The Server Is Listening
-app.use("/", mainRoutes);
+app.use("/", tasksRoutes);
+
 
   //Server Running
 app.listen(process.env.PORT, () => {

@@ -1,6 +1,9 @@
 const Task = require('../models/Task');
 
 module.exports = {
+  getIndex: (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  },
   toggleTask: async (req, res) => {
     if (req.body.text != null) {
       res.task.text = req.body.text;
