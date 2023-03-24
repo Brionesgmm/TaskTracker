@@ -17,6 +17,12 @@
       "day": "dfdfdf",
       "reminder": true,
       "id": 6
+    },
+    {
+      "text": "Christina",
+      "day": "Today",
+      "reminder": false,
+      "id": 7
     }
   ]
 }
